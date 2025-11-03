@@ -1,5 +1,5 @@
 {% set name = "orekit_jpype" %}
-{% set version = "13.0.2.2" %}
+{% set version = "13.1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b79358a80d588cbe2ae55171331a2169558373c0a6bb7727ad0504caeaee4349
+  sha256: 11f6cf9772f29733ae6d7e17f8d7b879d84626f5e05019569ca418ba3b9b624c
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - jpype1 =1.5.0
+    - jpype1
     - numpy
     - openjdk
 
