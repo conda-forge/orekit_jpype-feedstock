@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - jpype1 =1.5.2
+    - jpype1 =1.7.1
     - numpy
     - openjdk
 
