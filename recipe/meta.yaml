@@ -32,6 +32,7 @@ test:
     - python {{ python_min }}
     - pip
     - openjdk
+    - pytest
   commands:
     - pip check
     - python -c "import orekit_jpype; orekit_jpype.initVM()"
